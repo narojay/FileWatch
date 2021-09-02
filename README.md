@@ -2,7 +2,7 @@
 
 ## 功能
 
-.net core 监听文件夹变化
+.net core 监听文件夹变化， FileSystemWatcher 封装
 
 ## 问题1
 
