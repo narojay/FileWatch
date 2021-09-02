@@ -31,4 +31,4 @@ Windows 操作系统会将FileSystemWatcher创建的缓冲区中的文件更改�
 
 ## 文档
 
-[文档](
+[文档](https://docs.microsoft.com/en-us/dotnet/api/system.io.filesystemwatcher?redirectedfrom=MSDN&view=net-5.0)
