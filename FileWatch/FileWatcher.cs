@@ -8,9 +8,20 @@ namespace FileWatch
     {
         private readonly FileSystemWatcher _fileSystemWatcher;
         private int a = 0;
-        public FileWatcher(string path)
+        public FileWatcher(string path,string filter = null)
         {
             _fileSystemWatcher = new FileSystemWatcher(path);
+            //_fileSystemWatcher.InternalBufferSize = 8192;
+
+            //_fileSystemWatcher.NotifyFilter = NotifyFilters.Attributes
+            //                                  | NotifyFilters.CreationTime
+            //                                  | NotifyFilters.DirectoryName
+            //                                  | NotifyFilters.FileName
+            //                                  | NotifyFilters.LastAccess
+            //                                  | NotifyFilters.LastWrite
+            //                                  | NotifyFilters.Security
+            //                                  | NotifyFilters.Size;
+            //_fileSystemWatcher.Filter = filter;
             _fileSystemWatcher.Created += OnFileSystemWatcherOnCreated;
             _fileSystemWatcher.Changed += OnFileSystemWatcherOnChanged;
             _fileSystemWatcher.Deleted += OnFileSystemWatcherOnDeleted;
