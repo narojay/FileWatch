@@ -7,7 +7,6 @@ namespace FileWatch
     public class FileWatcher
     {
         private readonly FileSystemWatcher _fileSystemWatcher;
-        private int a = 0;
         public FileWatcher(string path,string filter = null)
         {
             _fileSystemWatcher = new FileSystemWatcher(path);
