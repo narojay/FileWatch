@@ -25,7 +25,7 @@ Windows 操作系统会将FileSystemWatcher创建的缓冲区中的文件更改�
 
 ## 如何解决?
 
-请使用NotifyFilter和IncludeSubdirectories属性，变化频率降低点。
+请使用NotifyFilter和IncludeSubdirectories属性。
 
 
 
